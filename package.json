@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node src/generator/main.js && postcss --verbose -o dist/assets/main.css src/assets/main.css",
     "clean": "rm -rf dist",
+    "generate": "node src/generator/main.js",
     "serve": "http-server dist"
   },
   "repository": {
