@@ -45,7 +45,8 @@ async function renderFile(filePath) {
   const dirty = marked(data)
   const html = sanitizeHtml(dirty)
 
-  return mustache.render(template, {title: path.basename(filePath), content: html})
+  const title = path.parse(filePath).name
+  return mustache.render(template, {title: title, content: html})
 }
 
 
