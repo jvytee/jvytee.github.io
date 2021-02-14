@@ -22,3 +22,8 @@ function toggleDarkmode() {
 }
 
 applyDarkmode();
+
+const toggleButtons = document.querySelectorAll('button.toggle-darkmode')
+for(const toggleButton of toggleButtons) {
+  toggleButton.onclick = toggleDarkmode;
+}
