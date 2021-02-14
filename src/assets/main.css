@@ -10,7 +10,7 @@ body {
 header {
   @apply max-w-screen-md mx-auto p-4 border-solid border-b-2 border-gray-700 font-sans;
   @apply md:my-4 md:border-2;
-  @apply dark:border-green-500 dark:font-mono;
+  @apply dark:border-green-500;
 }
 
 nav {
@@ -34,7 +34,6 @@ main {
 
 h1, h2, h3 {
   @apply my-4 font-sans;
-  @apply dark:font-mono;
 }
 
 h1 {
@@ -55,12 +54,12 @@ p, img {
 
 footer {
   @apply max-w-screen-md mx-auto p-4 border-solid border-t-2 border-gray-700 font-sans;
-  @apply dark:border-green-500 dark:font-mono;
+  @apply dark:border-green-500;
 }
 
 button {
-  @apply p-1 border-solid border-2 border-gray-500 font-sans;
-  @apply dark:border-green-700 dark:font-mono;
+  @apply p-2 bg-gray-500 text-white font-sans;
+  @apply dark:bg-green-700 dark:text-black;
 }
 
 .post-list {
@@ -69,6 +68,6 @@ button {
 }
 
 .post-meta {
-  @apply p-4 text-gray-500;
+  @apply pr-4 text-gray-500;
   @apply dark:text-green-700 dark:font-mono;
 }
