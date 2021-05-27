@@ -5,7 +5,7 @@ const generator = require('./index.js')
 
 const config = {
   sourceDir: 'src',
-  targetDir: 'dist'
+  targetDir: 'dist',
 }
 
 
@@ -37,7 +37,7 @@ async function main() {
       await fs.writeFile(targetPath, html)
     }
 
-    if(path.extname(file) == '.html' && path.basename(file)[0] != '_') {
+      if(path.extname(file) == '.html' && path.basename(file)[0] != '_') {
       console.log(`⛧  Copying ${targetPath}`)
       await fs.mkdir(targetDir, {recursive: true})
       await fs.copyFile(file, targetPath)
@@ -52,7 +52,7 @@ async function main() {
     const targetPath = generator.getTargetPath(file, config.sourceDir, config.targetDir)
     const targetDir = path.dirname(targetPath)
 
-    if(path.extname(file) != '.css' && !fileStat.isDirectory()) {
+    if(!fileStat.isDirectory()) {
       console.log(`⛧  Copying ${targetPath}`)
       await fs.mkdir(targetDir, {recursive: true})
       await fs.copyFile(file, targetPath)
