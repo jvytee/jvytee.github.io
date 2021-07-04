@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>jvytee.dev</title>
+
+    <link rel="stylesheet" href="{{ get_url(path='normalize.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ get_url(path='main.css') }}" type="text/css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="https://jvytee.dev" class="font-semibold">jvytee.dev</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      {% block content %} {% endblock %}
+    </main>
+
+    <footer>
+    </footer>
+  </body>
+</html>
+
