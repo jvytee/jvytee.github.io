@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://jvytee.dev/</loc>
+    </url>
+    <url>
+        <loc>https://jvytee.dev/about/</loc>
+    </url>
+    <url>
+        <loc>https://jvytee.dev/blog/</loc>
+    </url>
+    <url>
+        <loc>https://jvytee.dev/blog/hello/</loc>
+        <lastmod>2021-07-04</lastmod>
+    </url>
+</urlset>
