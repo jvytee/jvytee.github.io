@@ -56,9 +56,23 @@ img {
 
 footer {
   border-top: 2px solid #008055;
+  color: #666;
   margin: 1em auto;
   max-width: 720px;
   padding: 1em;
+  text-align: right;
+}
+
+footer a:link {
+  color: #666;
+}
+
+footer a:visited {
+  color: #666;
+}
+
+footer a:hover, footer a:focus {
+  color: #008055;
 }
 
 .post-list {
