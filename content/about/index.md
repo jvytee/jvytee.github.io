@@ -5,7 +5,7 @@ title = "About"
 ![](cloud.jpg)
 
 ## Hi, I'm Julian!
-I'm a software developer mostly interested in distributed systems from Cologne, Germany.
+I'm a software developer mostly interested in distributed systems.
 There's not much to see on my website yet, but I'd like to change that soon.
 
 ## Contact
