@@ -3,77 +3,23 @@
 @tailwind utilities;
 
 @layer base {
-  header {
-    @apply max-w-screen-md mx-auto mb-4;
-    @apply text-gray-100 bg-green-900 font-sans;
-    @apply md:mt-4 md:rounded;
+  main h1 {
+    @apply mt-8 text-3xl font-mono;
   }
 
-  header nav {
-    @apply flex flex-row;
+  main h2 {
+    @apply mt-8 text-2xl font-mono;
   }
 
-  header nav a {
-    @apply m-2;
+  main h3 {
+    @apply mt-8 text-xl font-mono;
   }
 
-  main {
-    @apply max-w-screen-md mx-auto my-4 px-2;
-    @apply text-gray-900 bg-white font-sans;
-    @apply md:px-0;
+  main p {
+    @apply my-4;
   }
 
-  footer {
-    @apply max-w-screen-md mx-auto my-4;
-    @apply text-green-900 bg-gray-100 font-sans;
-    @apply flex flex-row-reverse;
-    @apply md:rounded;
-  }
-
-  footer a {
-    @apply m-2;
-  }
-
-  h1, h2, h3 {
-    @apply mt-4 mb-2;
-    @apply font-serif font-bold;
-  }
-
-  h1 {
-    @apply text-3xl;
-  }
-
-  h2 {
-    @apply text-2xl;
-  }
-
-  h3 {
-    @apply text-xl;
-  }
-
-  p {
-    @apply my-2;
-  }
-
-  a {
+  main a, footer a {
     @apply underline;
-  }
-
-  img {
-    @apply rounded;
-  }
-
-  ul {
-    @apply list-inside list-disc;
-  }
-}
-
-@layer components {
-  .post-list {
-    @apply list-none;
-  }
-
-  .post-meta {
-    @apply text-green-900 mr-2;
   }
 }

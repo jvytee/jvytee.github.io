@@ -4,14 +4,16 @@
 {% set section = get_section(path="blog/_index.md") %}
 <h1>{{ section.title }}</h1>
 
-<ul class="post-list">
-  {% for page in section.pages %}
-  <li>
-    <span class="post-meta">{{ page.date }}</span>
-    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
+<p>
+  <ul class="list-none">
+    {% for page in section.pages %}
+    <li>
+      <span class="mr-4 text-gray-500">{{ page.date }}</span>
+      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</p>
 {% endblock content %}
 
 {% block footer %}

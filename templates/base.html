@@ -11,20 +11,25 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="/">jvytee.dev</a>
-        <a href="{{ get_url(path='@/about/index.md') }}">About</a>
-      </nav>
-    </header>
+    <div class="container max-w-screen-sm mx-auto font-sans">
+      <header class="p-4 border-b-2 border-solid font-mono">
+        <nav>
+          <ul class="flex flex-row items-baseline">
+            <li class="mr-4"><a class="underline" href="/">Blog</a></li>
+            <li class="mr-4"><a class="underline" href="{{ get_url(path='@/about/index.md') }}">About</a></li>
+            <li class="grow text-right"><h1 class="text-3xl font-bold"><a href="/">jvytee.dev</a></h1></li>
+            <ul>
+        </nav>
+      </header>
 
-    <main>
-      {% block content %} {% endblock %}
-    </main>
+      <main class="p-4">
+        {% block content %} {% endblock %}
+      </main>
 
-    <footer>
-      {% block footer %} {% endblock %}
-    </footer>
+      <footer class="mt-8 p-4 border-t-2 border-solid text-gray-500 font-mono">
+        {% block footer %} {% endblock %}
+      </footer>
+    </div>
   </body>
 </html>
 
