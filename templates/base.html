@@ -12,7 +12,7 @@
 
   <body>
     <div class="container max-w-screen-sm mx-auto font-sans">
-      <header class="p-4 border-b-2 border-solid font-mono">
+      <header class="p-4 border-b-2 border-solid font-mono selection:bg-black selection:text-white">
         <nav>
           <ul class="flex flex-row items-baseline">
             <li class="mr-4"><a class="underline" href="{{ get_url(path='@/blog/_index.md') }}">Blog</a></li>
@@ -22,11 +22,11 @@
         </nav>
       </header>
 
-      <main class="p-4">
+      <main class="p-4 selection:bg-black selection:text-white">
         {% block content %} {% endblock %}
       </main>
 
-      <footer class="mt-8 p-4 border-t-2 border-solid text-gray-500 font-mono">
+      <footer class="mt-8 p-4 border-t-2 border-solid text-gray-500 font-mono selection:bg-gray-500 selection:text-white">
         {% block footer %} {% endblock %}
       </footer>
     </div>
