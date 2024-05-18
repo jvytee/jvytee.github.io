@@ -6,30 +6,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="{{ get_url(path='normalize.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ get_url(path='main.css') }}" type="text/css">
     <link rel="alternate" href="{{ get_url(path='rss.xml', trailing_slash=false) }}" type="application/rss+xml" title="RSS">
   </head>
 
   <body>
-    <div class="container max-w-screen-sm mx-auto font-sans">
-      <header class="p-4 border-b-2 border-solid font-mono selection:bg-black selection:text-white">
-        <nav>
-          <ul class="flex flex-row items-baseline">
-            <li class="mr-4"><a class="underline" href="{{ get_url(path='@/blog/_index.md') }}">Blog</a></li>
-            <li class="mr-4"><a class="underline" href="{{ get_url(path='@/about/index.md') }}">About</a></li>
-            <li class="grow text-right"><h1 class="text-3xl font-bold"><a href="/">jvytee.github.io</a></h1></li>
-            <ul>
-        </nav>
-      </header>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="underline" href="{{ get_url(path='@/blog/_index.md') }}">Blog</a></li>
+          <li><a class="underline" href="{{ get_url(path='@/about/index.md') }}">About</a></li>
+          <li id="nav-title"><a href="/">jvytee.github.io</a></li>
+          <ul>
+      </nav>
+    </header>
 
-      <main class="p-4 selection:bg-black selection:text-white">
-        {% block content %} {% endblock %}
-      </main>
+    <main>
+      {% block content %} {% endblock %}
+    </main>
 
-      <footer class="mt-8 p-4 border-t-2 border-solid text-gray-500 font-mono selection:bg-gray-500 selection:text-white">
-        {% block footer %} {% endblock %}
-      </footer>
-    </div>
+    <footer>
+      {% block footer %} {% endblock %}
+    </footer>
   </body>
 </html>
 
