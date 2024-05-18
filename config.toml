@@ -15,7 +15,7 @@ compile_sass = false
 build_search_index = false
 
 # Output directory for GitHub pages
-output_dir = "docs"
+output_dir = "github-pages"
 
 # Configure RSS feed generation
 generate_feed = true
