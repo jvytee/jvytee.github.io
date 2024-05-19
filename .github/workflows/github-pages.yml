@@ -25,6 +25,9 @@ jobs:
           path: github-pages
 
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy_pages.outputs.page_url }}
     needs: build
     permissions:
       id-token: write
@@ -32,4 +35,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy website artifact
+        id: deploy_pages
         uses: actions/deploy-pages@v4
