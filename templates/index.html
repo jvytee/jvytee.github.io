@@ -5,10 +5,10 @@
 <h1>{{ section.title }}</h1>
 
 <p>
-  <ul class="list-none">
+  <ul id="blog-index">
     {% for page in section.pages %}
     <li>
-      <span class="mr-4 text-gray-500">{{ page.date }}</span>
+      <span class="blog-meta">{{ page.date }}</span>
       <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
     </li>
     {% endfor %}
