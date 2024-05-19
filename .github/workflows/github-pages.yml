@@ -11,20 +11,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: taiki-e/install-action@v2
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
         with:
           tool: zola
-      - uses: actions/checkout@v4
-      - run: zola build
-      - uses: actions/upload-pages-artifact@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Build website
+        run: zola build
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: github-pages
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
     permissions:
       id-token: write
       pages: write
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/deploy-pages@v4
+      - name: Deploy website artifact
+        uses: actions/deploy-pages@v4
