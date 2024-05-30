@@ -1,4 +1,6 @@
 :root {
+  color-scheme: light dark;
+
   --bg-light: #FFFFFF;
   --fg-light: #3C3836;
   --blue-primary-light: #076678;
@@ -6,10 +8,19 @@
   --purple-primary-light: #8F3F71;
   --purple-secondary-light: #B16286;
   --grey-light: #928374;
+
+  --bg-dark: #282828;
+  --fg-dark: #FFFFFF;
+  --blue-primary-dark: #83A598;
+  --blue-secondary-dark: #458588;
+  --purple-primary-dark: #D3869B;
+  --purple-secondary-dark: #B16286;
+  --grey-dark: #928374;
 }
 
 body {
-  color: var(--fg-light);
+  background-color: light-dark(var(--bg-light), var(--bg-dark));
+  color: light-dark(var(--fg-light), var(--fg-dark));
   font-family: "Noto Sans", "Verdana", sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -18,23 +29,23 @@ body {
 }
 
 a {
-  color: var(--blue-primary-light);
+  color: light-dark(var(--blue-primary-light), var(--blue-primary-dark));
 }
 
 a:hover, a:focus {
-  color: var(--blue-secondary-light);
+  color: light-dark(var(--blue-secondary-light), var(--blue-secondary-dark));
 }
 
 a:active, a:visited {
-  color: var(--purple-primary-light);
+  color: light-dark(var(--purple-primary-light), var(--purple-primary-dark));
 }
 
 a:active:hover, a:active:focus, a:visited:hover, a:visited:focus {
-  color: var(--purple-secondary-light);
+  color: light-dark(var(--purple-secondary-light), var(--purple-secondary-dark));
 }
 
 header {
-  border-bottom-color: var(--grey-light);
+  border-bottom-color: light-dark(var(--grey-light), var(--grey-dark));
   border-bottom-width: 1px;
   border-bottom-style: solid;
   font-family: "Iosevka", "Courier New", monospace;
@@ -62,11 +73,11 @@ header {
     }
 
     & a, a:active, a:visited {
-      color: var(--fg-light);
+      color: light-dark(var(--fg-light), var(--fg-dark));
     }
 
     & a:hover,  a:focus {
-      color: var(--blue-secondary-light);
+      color: light-dark(var(--blue-secondary-light), var(--blue-secondary-dark));
     }
   }
 }
@@ -108,7 +119,7 @@ main {
   }
 
   & .blog-meta {
-    color: var(--grey-light);
+    color: light-dark(var(--grey-light), var(--grey-dark));
     margin-right: 1rem;
   }
 
@@ -118,7 +129,7 @@ main {
 }
 
 footer {
-  border-top-color: var(--grey-light);
+  border-top-color: light-dark(var(--grey-light), var(--grey-dark));
   border-top-style: solid;
   border-top-width: 1px;
   color: var(--grey-light);
