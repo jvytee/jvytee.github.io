@@ -1,6 +1,10 @@
 :root {
   color-scheme: light dark;
 
+  --fonts-sans: "Verdana", sans-serif;
+  --fonts-serif: "Georgia", serif;
+  --fonts-mono: "Courier New", monospace;
+
   --bg-light: #FFFFFF;
   --fg-light: #3C3836;
   --blue-primary-light: #076678;
@@ -21,7 +25,7 @@
 body {
   background-color: light-dark(var(--bg-light), var(--bg-dark));
   color: light-dark(var(--fg-light), var(--fg-dark));
-  font-family: "Noto Sans", "Verdana", sans-serif;
+  font-family: var(--fonts-serif);
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -48,7 +52,7 @@ header {
   border-bottom-color: light-dark(var(--grey-light), var(--grey-dark));
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  font-family: "Iosevka", "Courier New", monospace;
+  font-family: var(--fonts-sans);
   padding: 1rem;
 
   & #nav-title {
@@ -86,18 +90,8 @@ main {
   line-height: 1.5rem;
   padding: 1rem;
 
-  & h1 {
-    font-family: "Iosevka", "Courier New", monospace;
-    margin-top: 2rem;
-  }
-
-  & h2 {
-    font-family: "Iosevka", "Courier New", monospace;
-    margin-top: 2rem;
-  }
-
-  & h3 {
-    font-family: "Iosevka", "Courier New", monospace;
+  & h1, h2, h3 {
+    font-family: var(--fonts-sans);
     margin-top: 2rem;
   }
 
@@ -115,11 +109,13 @@ main {
   }
 
   & ul#blog-index {
+    font-family: var(--fonts-sans);
     list-style-type: none;
   }
 
   & .blog-meta {
     color: light-dark(var(--grey-light), var(--grey-dark));
+    font-family: var(--fonts-sans);
     margin-right: 1rem;
   }
 
@@ -133,7 +129,7 @@ footer {
   border-top-style: solid;
   border-top-width: 1px;
   color: var(--grey-light);
-  font-family: "Iosevka", "Courier New", monospace;
+  font-family: var(--fonts-sans);
   margin-top: 1rem;
   padding: 1rem;
 }
