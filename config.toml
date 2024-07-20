@@ -18,8 +18,8 @@ build_search_index = false
 output_dir = "github-pages"
 
 # Configure RSS feed generation
-generate_feed = true
-feed_filename = "rss.xml"
+generate_feeds = true
+feed_filenames = ["rss.xml"]
 feed_limit = 10
 
 [markdown]
