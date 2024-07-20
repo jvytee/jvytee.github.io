@@ -1,9 +1,9 @@
 :root {
   color-scheme: light dark;
 
-  --fonts-sans: "Verdana", sans-serif;
+  --fonts-sans: "Helvetica Neue", "Arial", sans-serif;
   --fonts-serif: "Georgia", serif;
-  --fonts-mono: "Courier New", monospace;
+  --fonts-mono: ui-monospace, "Courier New", "Courier", monospace;
 
   --bg-light: #FFFFFF;
   --fg-light: #3C3836;
@@ -25,7 +25,7 @@
 body {
   background-color: light-dark(var(--bg-light), var(--bg-dark));
   color: light-dark(var(--fg-light), var(--fg-dark));
-  font-family: var(--fonts-serif);
+  font-family: var(--fonts-sans);
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -91,7 +91,7 @@ main {
   padding: 1rem;
 
   & h1, h2, h3 {
-    font-family: var(--fonts-sans);
+    font-family: var(--fonts-serif);
     margin-top: 2rem;
   }
 
