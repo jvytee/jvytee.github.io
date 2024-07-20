@@ -1,10 +1,12 @@
 # jvytee.github.io
+
 Personal website built with [Zola](https://www.getzola.org/) and [tailwindcss](https://tailwindcss.com/).
 
 ## Usage
+
 Zola generates HTML by
 
-```sh 
+```sh
 zola build
 ```
 
