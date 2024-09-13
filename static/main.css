@@ -5,15 +5,16 @@
     --fonts-serif: "Georgia", serif;
     --fonts-mono: ui-monospace, "Courier New", "Courier", monospace;
 
-    --raisin-black: #1e1e24ff;
-    --floral-white: #fff8f0ff;
-    --vista-blue: #8ca0d7ff;
-    --china-rose: #a8577eff;
+    --blue-ncs: #0090c1ff;
+    --rose: #ed217cff;
+    --dark-green: #082d0fff;
+    --onyx: #313638ff;
+    --antiflash-white: #e8e9ebff;
 
-    --dark: var(--raisin-black);
-    --light: var(--floral-white);
-    --link-blue: var(--vista-blue);
-    --link-purple: var(--china-rose);
+    --dark: var(--onyx);
+    --light: var(--antiflash-white);
+    --link-blue: var(--blue-ncs);
+    --link-purple: var(--rose);
 }
 
 body {
