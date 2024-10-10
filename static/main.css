@@ -5,20 +5,19 @@
     --fonts-serif: "Georgia", serif;
     --fonts-mono: ui-monospace, "Courier New", "Courier", monospace;
 
-    --blue-ncs: #0090c1ff;
-    --rose: #ed217cff;
-    --dark-green: #082d0fff;
-    --onyx: #313638ff;
-    --antiflash-white: #e8e9ebff;
+    --black: #080808ff;
+    --seasalt: #f8f8f8ff;
+    --azure: #0080ffff;
+    --african-violet: #c080c0ff;
 
-    --dark: var(--onyx);
-    --light: var(--antiflash-white);
-    --link-blue: var(--blue-ncs);
-    --link-purple: var(--rose);
+    --dark: var(--black);
+    --light: var(--seasalt);
+    --link-blue: var(--azure);
+    --link-purple: var(--african-violet);
 }
 
 body {
-    background-color: light-dark(var(--light), var(--dark));
+    background-color: light-dark(#ffffff, #000000);
     color: light-dark(var(--dark), var(--light));
     font-family: var(--fonts-sans);
     margin-left: auto;
