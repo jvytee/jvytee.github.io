@@ -2,7 +2,7 @@
 title = "About"
 +++
 
-![](cloud.jpg)
+![Person in a grey sweatshirt standing in a white salt flat, pointing their finger to single cloud in the sky as if they were touching it](cloud.jpg)
 
 ## Hi, I'm Julian!
 
