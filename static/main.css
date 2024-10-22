@@ -7,13 +7,15 @@
 
     --black: #080808ff;
     --seasalt: #f8f8f8ff;
-    --azure: #0080ffff;
-    --african-violet: #c080c0ff;
+    --azure: #0080f0ff;
+    --plum: #804080ff;
+    --pakistan-green: #004000ff;
 
     --dark: var(--black);
     --light: var(--seasalt);
     --link-blue: var(--azure);
-    --link-purple: var(--african-violet);
+    --link-purple: var(--plum);
+    --accent: var(--pakistan-green);
 }
 
 body {
