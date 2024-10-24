@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Cloudsalat</title>
+    <head>
+        <title>Cloudsalat</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="{{ get_url(path='normalize.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ get_url(path='main.css') }}" type="text/css">
-    <link rel="alternate" href="{{ get_url(path='rss.xml', trailing_slash=false) }}" type="application/rss+xml" title="RSS">
-  </head>
+        <link rel="stylesheet" href="{{ get_url(path='normalize.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ get_url(path='main.css') }}" type="text/css">
+        <link rel="alternate" href="{{ get_url(path='rss.xml', trailing_slash=false) }}" type="application/rss+xml" title="RSS">
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a class="underline" href="{{ get_url(path='@/blog/_index.md') }}">Blog</a></li>
-          <li><a class="underline" href="{{ get_url(path='@/about/index.md') }}">About</a></li>
-          <li id="nav-title"><a href="/">Cloudsalat</a></li>
-          <ul>
-      </nav>
-    </header>
+        <link rel="stylesheet" href="{{ get_url(path='leaflet.css') }}" type="text/css">
+        <script src="{{ get_url(path='leaflet.js') }}"></script>
+    </head>
 
-    <main>
-      {% block content %} {% endblock %}
-    </main>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="underline" href="{{ get_url(path='@/blog/_index.md') }}">Blog</a></li>
+                    <li><a class="underline" href="{{ get_url(path='@/about/index.md') }}">About</a></li>
+                    <li id="nav-title"><a href="/">Cloudsalat</a></li>
+                    <ul>
+            </nav>
+        </header>
 
-    <footer>
-      {% block footer %} {% endblock %}
-    </footer>
-  </body>
+        <main>
+            {% block content %} {% endblock %}
+        </main>
+
+        <footer>
+            {% block footer %} {% endblock %}
+        </footer>
+    </body>
 </html>
 

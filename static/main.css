@@ -98,9 +98,11 @@ main {
     }
 
     & .blog-meta {
-        color: light-dark(var(--dark), var(light));
-        font-family: var(--fonts-sans);
         margin-right: 1rem;
+    }
+
+    & #map-toggle {
+        color: var(--accent);
     }
 
     & img {

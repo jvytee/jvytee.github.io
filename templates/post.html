@@ -1,7 +1,34 @@
 {% extends "base.html" %}
 
 {% block content %}
-<p class="blog-meta">{{ page.date }}</p>
+<p>
+    <span class="blog-meta">{{ page.date }}</span>
+
+    {% if page.extra.map %}
+    <a id="map-toggle" href="javascript:void(0)">Toggle map</a>
+    <div id="map" style="height: 24rem; width=100%"></div>
+
+    <script type="text/javascript">
+        const mapToggle = document.getElementById("map-toggle");
+        mapToggle.onclick = () => {
+            const map = document.getElementById("map");
+            const style = window.getComputedStyle(map);
+            const display = style.getPropertyValue("display");
+
+            const toggled = display === "block" ? "none" : "block";
+            map.style.display = toggled;
+        };
+
+        const map = L.map("map").setView({{ page.extra.location }}, 13);
+        const marker = L.marker({{ page.extra.location }}).addTo(map);
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+    </script>
+    {% endif %}
+</p>
+
 <h1>{{ page.title }}</h1>
 {{ page.content | safe }}
 {% endblock content %}
