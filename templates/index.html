@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block head %}
+<title>Cloudsalat</title>
+{% endblock head %}
+
 {% block content %}
 {% set section = get_section(path="blog/_index.md") %}
 <h1>{{ section.title }}</h1>

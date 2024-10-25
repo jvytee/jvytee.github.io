@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{% block head %}
+    <title>{{ page.title }} | Cloudsalat</title>
+
+    {% if page.extra.map %}
+    <link rel="stylesheet" href="{{ get_url(path='leaflet.css') }}" type="text/css">
+    <script src="{{ get_url(path='leaflet.js') }}"></script>
+    {% endif %}
+{% endblock head %}
+
 {% block content %}
 <p>
     <span class="blog-meta">{{ page.date }}</span>

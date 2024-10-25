@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Cloudsalat</title>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,8 +8,7 @@
         <link rel="stylesheet" href="{{ get_url(path='main.css') }}" type="text/css">
         <link rel="alternate" href="{{ get_url(path='rss.xml', trailing_slash=false) }}" type="application/rss+xml" title="RSS">
 
-        <link rel="stylesheet" href="{{ get_url(path='leaflet.css') }}" type="text/css">
-        <script src="{{ get_url(path='leaflet.js') }}"></script>
+        {% block head %} {% endblock %}
     </head>
 
     <body>
@@ -21,7 +18,7 @@
                     <li><a class="underline" href="{{ get_url(path='@/blog/_index.md') }}">Blog</a></li>
                     <li><a class="underline" href="{{ get_url(path='@/about/index.md') }}">About</a></li>
                     <li id="nav-title"><a href="/">Cloudsalat</a></li>
-                    <ul>
+                <ul>
             </nav>
         </header>
 
