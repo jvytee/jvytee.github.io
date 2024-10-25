@@ -8,14 +8,14 @@
 <h1>{{ section.title }}</h1>
 
 <p>
-  <ul id="blog-index">
-    {% for page in section.pages %}
-    <li>
-      <span class="blog-meta">{{ page.date }}</span>
-      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
+    <ul id="blog-index">
+        {% for page in section.pages %}
+        <li>
+            <span class="blog-meta">{{ page.date }}</span>
+            <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
 </p>
 {% endblock content %}
 
