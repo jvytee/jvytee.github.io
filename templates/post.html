@@ -29,9 +29,9 @@
         };
 
         const map = L.map("map").setView({{ page.extra.location }}, 8);
-        L.tileLayer("https://tile.openstreetmap.de/{z}/{x}/{y}.png", {
+        L.tileLayer("{{ config.extra.map_tile_url | safe }}", {
             maxZoom: 18,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            attribution: '{{ config.extra.map_tile_attribution | safe }}'
         }).addTo(map);
         L.marker({{ page.extra.location }}).addTo(map);
     </script>
