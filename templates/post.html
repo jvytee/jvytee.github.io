@@ -19,21 +19,28 @@
 
     <script type="text/javascript">
         const mapToggle = document.getElementById("map-toggle");
+        const mapDiv = document.getElementById("map");
+        let map = null;
+
         mapToggle.onclick = () => {
-            const map = document.getElementById("map");
-            const style = window.getComputedStyle(map);
+            const style = window.getComputedStyle(mapDiv);
             const display = style.getPropertyValue("display");
 
-            const toggled = display === "block" ? "none" : "block";
-            map.style.display = toggled;
-        };
+            if(display === "block") {
+                mapDiv.style.display = "none";
+                return;
+            }
 
-        const map = L.map("map").setView({{ page.extra.location }}, 8);
-        L.tileLayer("{{ config.extra.map_tile_url | safe }}", {
-            maxZoom: 18,
-            attribution: '{{ config.extra.map_tile_attribution | safe }}'
-        }).addTo(map);
-        L.marker({{ page.extra.location }}).addTo(map);
+            mapDiv.style.display = "block";
+            if(!map) {
+                map = L.map(mapDiv).setView({{ page.extra.location }}, 8);
+                L.tileLayer("{{ config.extra.map_tile_url | safe }}", {
+                    maxZoom: 18,
+                    attribution: '{{ config.extra.map_tile_attribution | safe }}'
+                }).addTo(map);
+                L.marker({{ page.extra.location }}).addTo(map);
+            }
+        };
     </script>
     {% endif %}
 </p>
