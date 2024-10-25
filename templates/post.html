@@ -19,12 +19,12 @@
             map.style.display = toggled;
         };
 
-        const map = L.map("map").setView({{ page.extra.location }}, 13);
-        const marker = L.marker({{ page.extra.location }}).addTo(map);
-        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-            maxZoom: 19,
+        const map = L.map("map").setView({{ page.extra.location }}, 8);
+        L.tileLayer("https://tile.openstreetmap.de/{z}/{x}/{y}.png", {
+            maxZoom: 18,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
+        L.marker({{ page.extra.location }}).addTo(map);
     </script>
     {% endif %}
 </p>
