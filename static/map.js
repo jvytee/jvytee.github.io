@@ -1,7 +1,9 @@
-const initMap = (location, tileUrl, tileAttribution) => {
+import { map, tileLayer, marker } from "./leaflet-src.esm.js";
+
+export const initMap = (location, tileUrl, tileAttribution) => {
     const mapToggle = document.getElementById("map-toggle");
     const mapDiv = document.getElementById("map");
-    let map = null;
+    let mapObj = null;
 
     mapToggle.onclick = () => {
         const style = window.getComputedStyle(mapDiv);
@@ -13,13 +15,13 @@ const initMap = (location, tileUrl, tileAttribution) => {
         }
 
         mapDiv.style.display = "block";
-        if (!map) {
-            map = L.map(mapDiv).setView(location, 8);
-            L.tileLayer(tileUrl, {
-                maxZoom: 18,
-                attribution: tileAttribution
-            }).addTo(map);
-            L.marker(location).addTo(map);
+        if (!mapObj) {
+            mapObj = map(mapDiv).setView(location, 8);
+            tileLayer(
+                tileUrl,
+                {maxZoom: 18, attribution: tileAttribution}
+            ).addTo(mapObj);
+            marker(location).addTo(mapObj);
         }
     };
 };
