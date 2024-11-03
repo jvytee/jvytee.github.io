@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 
 {% block head %}
-    <title>{{ page.title }} | Cloudsalat</title>
+<title>{{ page.title }} | Cloudsalat</title>
 
-    {% if page.extra.map %}
-    <link rel="stylesheet" href="{{ get_url(path='leaflet.css') }}" type="text/css">
-    <script src="{{ get_url(path='leaflet.js') }}"></script>
-    <script src="{{ get_url(path='map.js') }}"></script>
-    {% endif %}
+{% if page.extra.location is defined %}
+<link rel="stylesheet" href="{{ get_url(path='leaflet.css') }}" type="text/css">
+<script src="{{ get_url(path='leaflet.js') }}"></script>
+<script src="{{ get_url(path='map.js') }}"></script>
+{% endif %}
 {% endblock head %}
 
 {% block content %}
 <p>
     <span class="blog-meta">{{ page.date }}</span>
 
-    {% if page.extra.map %}
+    {% if page.extra.location is defined %}
     <a id="map-toggle" href="javascript:void(0)">Toggle map</a>
     <div id="map"></div>
 

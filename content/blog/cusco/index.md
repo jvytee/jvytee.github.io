@@ -1,9 +1,9 @@
 +++
 title = "Streets of Cusco"
 date = 2024-10-23
+author = "Julian"
 
 [extra]
-map = true
 location = [-13.5170887, -71.9785356]
 +++
 
