@@ -80,8 +80,8 @@ main {
     }
 
     & p {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
 
     & ul {
@@ -120,7 +120,6 @@ footer {
     border-top-style: solid;
     border-top-width: 1px;
     font-family: var(--fonts-sans);
-    margin-top: 1rem;
     padding: 1rem;
 
     & a, a:active, a:visited {
