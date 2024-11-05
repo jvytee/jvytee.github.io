@@ -19,7 +19,7 @@ export const initMap = (location, tileUrl, tileAttribution) => {
             mapObj = map(mapDiv).setView(location, 8);
             tileLayer(
                 tileUrl,
-                {maxZoom: 18, attribution: tileAttribution}
+                { maxZoom: 18, attribution: tileAttribution }
             ).addTo(mapObj);
             marker(location).addTo(mapObj);
         }
