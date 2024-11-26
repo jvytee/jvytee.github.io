@@ -83,6 +83,7 @@ main {
 
     & h1, h2, h3 {
         font-family: var(--fonts-serif);
+        line-height: 2rem;
     }
 
     & p {
