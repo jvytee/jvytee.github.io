@@ -22,8 +22,7 @@ body {
     background-color: light-dark(var(--light), var(--dark));
     color: light-dark(var(--dark), var(--light));
     font-family: var(--fonts-sans);
-    font-size: 14px;
-    
+    font-size: 10pt;
     padding: 1rem;
 }
 
@@ -72,9 +71,9 @@ header {
 
 main {
     background-color: light-dark(#ffffff, #000000);
-    border-radius: 0.25rem;
-    
     line-height: 1.5rem;
+
+    border-radius: 0.25rem;
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
@@ -129,7 +128,6 @@ main {
 
 footer {
     font-family: var(--fonts-sans);
-    
     border-radius: 0.25rem;
     max-width: 640px;
     margin-left: auto;
