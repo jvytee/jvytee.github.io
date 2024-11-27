@@ -19,13 +19,11 @@
 }
 
 body {
-    background-color: light-dark(#ffffff, #000000);
+    background-color: light-dark(var(--light), var(--dark));
     color: light-dark(var(--dark), var(--light));
     font-family: var(--fonts-sans);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    max-width: 640px;
+    font-size: 10pt;
+    padding: 1rem;
 }
 
 a {
@@ -37,10 +35,11 @@ a:active, a:visited {
 }
 
 header {
-    border-bottom-color: light-dark(var(--dark), var(--light));
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+    background-color: var(--pakistan-green);
+    color: var(--light);
     font-family: var(--fonts-sans);
+    
+    border-radius: 0.25rem;
     padding: 1rem;
 
     & #nav-title {
@@ -60,28 +59,35 @@ header {
         }
 
         & li {
-            margin-right: 1rem;
+            margin-right: 1.5rem;
             list-style-type: none;
         }
 
         & a, a:active, a:visited {
-            color: light-dark(var(--dark), var(--light));
+            color: var(--light);
         }
     }
 }
 
 main {
+    background-color: light-dark(#ffffff, #000000);
     line-height: 1.5rem;
+
+    border-radius: 0.25rem;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 1rem;
 
     & h1, h2, h3 {
         font-family: var(--fonts-serif);
-        margin-top: 2rem;
+        line-height: 2rem;
     }
 
     & p {
         margin-bottom: 2rem;
-        margin-top: 2rem;
     }
 
     & ul {
@@ -96,9 +102,13 @@ main {
         font-family: var(--fonts-sans);
         list-style-type: none;
     }
+    
+    & li {
+        margin-bottom: 0.25rem;
+    }
 
     & .blog-meta {
-        margin-right: 1rem;
+        margin-right: 1.5rem;
     }
 
     & #map-toggle {
@@ -106,20 +116,23 @@ main {
     }
 
     & #map {
+        border-radius: 0.25rem;
         display: none;
         height: 24rem;
     }
 
     & img {
+        border-radius: 0.25rem;
         max-width: 100%;
     }
 }
 
 footer {
-    border-top-color: light-dark(var(--dark), var(--light));
-    border-top-style: solid;
-    border-top-width: 1px;
     font-family: var(--fonts-sans);
+    border-radius: 0.25rem;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1rem;
 
     & a, a:active, a:visited {
