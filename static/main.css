@@ -22,7 +22,7 @@ body {
     background-color: light-dark(var(--light), var(--dark));
     color: light-dark(var(--dark), var(--light));
     font-family: var(--fonts-sans);
-    font-size: 10pt;
+    font-size: 14px;
     padding: 1rem;
 }
 
