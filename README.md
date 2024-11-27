@@ -1,6 +1,8 @@
 # jvytee.github.io
 
-Personal website built with [Zola](https://www.getzola.org/) and [tailwindcss](https://tailwindcss.com/).
+![GitHub Pages](https://github.com/jvytee/jvytee.github.io/actions/workflows/github-pages.yml/badge.svg)
+
+Personal website built with [Zola](https://www.getzola.org/).
 
 ## Usage
 
