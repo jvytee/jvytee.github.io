@@ -35,7 +35,7 @@ a:active, a:visited {
 }
 
 header {
-    background-color: var(--pakistan-green);
+    background-color: var(--accent);
     color: var(--light);
     font-family: var(--fonts-sans);
     
@@ -137,5 +137,16 @@ footer {
 
     & a, a:active, a:visited {
         color: light-dark(var(--dark), var(--light));
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 0;
+    }
+
+    header, main, footer {
+        border-radius: 0;
+        margin: 0;
     }
 }
