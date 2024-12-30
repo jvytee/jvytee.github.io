@@ -4,7 +4,7 @@ date = 2024-12-29
 author = "Julian"
 
 [extra]
-location = []
+location = [-1.8246418086982084, -80.75517332133711]
 +++
 
 ![Beach](beach.jpg)
