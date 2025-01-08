@@ -2,6 +2,9 @@
 title = "Close to the Sun"
 date = 2025-01-08
 author = "Julian"
+
+[extra]
+location = [-0.22240494647238918, -78.49909813894652]
 +++
 
 ![A person sitting on the "i" of big steel letters spelling "Quito", with mountains and the afternoon sun in the background](quito.jpg "Quito Letters")
