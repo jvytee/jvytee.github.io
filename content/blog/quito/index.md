@@ -16,7 +16,7 @@ It's also home to a very beautiful botanical garden with numerous orchids, carni
 
 ![A bird looking like someone mixed a chicken with an eagle standing on a rock and looking at the photographer, with mountain peaks covered by clouds in the background](streifenkarakara.jpg "Carunculated Caracara")
 Another attraction in Quito is the _TeleferiQo_, a cable car taking passengers from 3117 to 3945 meters above sea level in just a few minutes.
-After gaining an additional 650 meters of elevation by hiking, we met this curious _Carunculated Caracara_ at the peak of _Rucu Pichincha_, a former volcano.
+After gaining an additional 750 meters of elevation by hiking, we met this curious _Carunculated Caracara_ at the peak of _Rucu Pichincha_, a former volcano.
 
 ![Panorama of the city of Quito behind some Andean grass from a mountain, spectacularly framed by mixed sun and clouds](panorama.jpg "Quito Mountain View")
 The view improved significantly on our way back.
