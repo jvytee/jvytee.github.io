@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>{{ page.title }} | Cloudsalat</title>
+{% endblock head %}
+
+{% block content %}
+<h1>{{ page.title }}</h1>
+{{ page.content | safe }}
+
+<script type="module">
+    import { decrypt } from "{{ get_url(path='decrypt.js') }}";
+    await decrypt();
+</script>
+{% endblock content %}
