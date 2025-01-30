@@ -1,4 +1,4 @@
-import * as age from "https://esm.sh/age-encryption@0.2.0";
+import { Decrypter } from "https://esm.sh/age-encryption@0.2.0?exports=Decrypter";
 
 export const decrypt = async () => {
     const urlSearchParams = new URLSearchParams(location.search);
@@ -7,7 +7,7 @@ export const decrypt = async () => {
         return;
     }
 
-    const decrypter = new age.Decrypter();
+    const decrypter = new Decrypter();
     decrypter.addPassphrase(passphrase);
 
     const main = document.getElementsByTagName("main")[0];
