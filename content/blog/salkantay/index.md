@@ -1,7 +1,7 @@
 +++
 title = "Over the Salkantay Pass"
 date = 2024-11-04
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-13.34644612201052, -72.56624835375679]

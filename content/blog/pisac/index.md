@@ -1,7 +1,7 @@
 +++
 title = "Citadel of Pisac"
 date = 2024-10-30
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-13.406171515790723, -71.84466381999552]

@@ -1,7 +1,7 @@
 +++
 title = "Entering Ecuador"
 date = 2024-12-15
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-2.89765, -79.004432]

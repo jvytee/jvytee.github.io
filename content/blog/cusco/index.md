@@ -1,7 +1,7 @@
 +++
 title = "Streets of Cusco"
 date = 2024-10-23
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-13.5170887, -71.9785356]

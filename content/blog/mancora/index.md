@@ -1,7 +1,7 @@
 +++
 title = "Beach Life in Mancora"
 date = 2024-12-06
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-4.1064636030187485, -81.05815076230022]

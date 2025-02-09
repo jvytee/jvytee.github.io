@@ -1,7 +1,7 @@
 +++
 title = "World's Longest Wave"
 date = 2024-12-05
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-7.705915662943123, -79.45221778427849]

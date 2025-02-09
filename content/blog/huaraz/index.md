@@ -1,7 +1,7 @@
 +++
 title = "Lagoons around Huaraz"
 date = 2024-11-23
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-9.485717626667862, -77.43173595138371]

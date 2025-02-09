@@ -1,7 +1,7 @@
 +++
 title = "Back in Lima"
 date = 2024-11-17
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-12.121731781226732, -77.03036949964373]

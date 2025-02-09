@@ -1,7 +1,7 @@
 +++
 title = "Machu Picchu"
 date = 2024-11-10
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-13.162746747646858, -72.54544152488509]

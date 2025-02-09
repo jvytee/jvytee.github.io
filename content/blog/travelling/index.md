@@ -1,6 +1,7 @@
 +++
 title = "Travelling Latin America"
 date = 2024-10-21
+authors = ["Julian"]
 +++
 
 Me and my partner are currently travelling Latin America and will continue to do so for the next months.

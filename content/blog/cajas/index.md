@@ -1,7 +1,7 @@
 +++
 title = "Side Effects of Climate Change"
 date = 2024-12-27
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-2.7823987, -79.2236094]

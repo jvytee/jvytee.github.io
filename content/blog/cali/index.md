@@ -1,7 +1,7 @@
 +++
 title = "Cali es Cali"
 date = 2025-01-15
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [3.451504949660507, -76.5340322053426]

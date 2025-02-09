@@ -1,7 +1,7 @@
 +++
 title = "Thin Air"
 date = 2025-01-09
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-0.6848433412823065, -78.4371170479923]

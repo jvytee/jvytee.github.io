@@ -1,7 +1,7 @@
 +++
 title = "Beach Life"
 date = 2024-12-30
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-1.8246418086982084, -80.75517332133711]

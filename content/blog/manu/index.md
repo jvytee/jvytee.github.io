@@ -1,7 +1,7 @@
 +++
 title = "Into the Jungle"
 date = 2024-11-12
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-12.85594732459084, -71.38362272872213]

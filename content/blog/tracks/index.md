@@ -1,7 +1,7 @@
 +++
 title = "Along the Tracks"
 date = 2024-11-08
-author = "Julian"
+authors = ["Julian"]
 
 [extra]
 location = [-13.159255568486454, -72.53822890701433]
