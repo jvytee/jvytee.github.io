@@ -1,7 +1,7 @@
 +++
 title = "Cocoa Farming"
-date = 2025-01-26
-author = "Julian"
+date = 2025-02-08
+authors = ["Julian"]
 
 [extra]
 location = [4.472565991980901, -75.12383306523022]
