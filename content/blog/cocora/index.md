@@ -7,7 +7,7 @@ authors = ["Julian"]
 location = [4.636576812865786, -75.47660311166159]
 +++
 
-On our weekend off at the Finca in Ibagué, we hopped on the public bus to visit the nearby town of Salento.
+On our weekend off from the cocoa business in Ibagué, we hopped on the public bus to visit the nearby town of Salento.
 The highland region between Cali, Medellin and Bogotá is widely know as the _coffee triangle_ of Colombia, so of course we took the chance to visit a local _finca_ that organically grows and processes the beans.
 
 ![A hand holding a red and brown bag of ground coffee in front actual coffee trees full of (green) beans](coffee.jpg "Coffee Plantation")
