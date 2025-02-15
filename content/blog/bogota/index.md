@@ -7,11 +7,11 @@ authors = ["Julian"]
 location = [4.595768769480833, -74.07156839122118]
 +++
 
-![City](city.jpg)
+![Panorama of an enormous city seen from a nearby mountain](city.jpg "Bogota")
 
-![Monserrate](monserrate.jpg)
-![Homeless](homeless.jpg)
+![A villa between trees on a green mountain, fading into a huge city to the right](monserrate.jpg "Monserrate")
+![Metal statue of a person with wounded feet, covered by a blanket on a bench in front of a white building](homeless.jpg "Homeless Jesus")
 
-![Art](art.jpg)
+![Various colourful artworks on a wooden wall](art.jpg "Street Art Exhibition")
 
-![Salsa](salsa.jpg)
+![A salsa band of 7 people on stage in a dim room with schemes of a crown in front of it](salsa.jpg "Live Salsa Music")
