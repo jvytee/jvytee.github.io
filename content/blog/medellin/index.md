@@ -1,6 +1,6 @@
 +++
 title = "Contrasts in Medellín"
-date = 2025-02-17
+date = 2025-02-18
 authors = ["Julian"]
 
 [extra]
