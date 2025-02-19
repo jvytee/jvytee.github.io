@@ -1,8 +1,18 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url("playfair-display.woff2");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("inter.woff2");
+}
+
 :root {
     color-scheme: light dark;
 
-    --fonts-sans: "Helvetica Neue", "Arial", sans-serif;
-    --fonts-serif: "Georgia", serif;
+    --fonts-sans: "Inter", "Helvetica Neue", "Arial", sans-serif;
+    --fonts-serif: "Playfair Display", "Georgia", serif;
     --fonts-mono: ui-monospace, "Courier New", "Courier", monospace;
 
     --black: #080808ff;
@@ -38,7 +48,7 @@ header {
     background-color: var(--accent);
     color: var(--light);
     font-family: var(--fonts-sans);
-    
+
     border-radius: 0.25rem;
     max-width: 640px;
     margin-left: auto;
@@ -105,7 +115,7 @@ main {
         font-family: var(--fonts-sans);
         list-style-type: none;
     }
-    
+
     & li {
         margin-bottom: 0.25rem;
     }
