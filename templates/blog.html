@@ -10,7 +10,7 @@
 <p>
     <ul id="blog-index">
         {% for page in section.pages %}
-        <li>
+        <li class="blog-entry">
             <span class="blog-meta">{{ page.date }}</span>
             <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
         </li>
