@@ -94,6 +94,11 @@ main {
     margin-bottom: 1rem;
     padding: 1rem;
 
+    & .blog-entry {
+        display: grid;
+        grid-template-columns: 10rem 1fr;
+    }
+
     & h1, h2, h3 {
         font-family: var(--fonts-serif);
         line-height: 2rem;
