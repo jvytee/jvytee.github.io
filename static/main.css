@@ -102,6 +102,13 @@ main {
         grid-template-columns: 8rem 1fr;
     }
 
+    & #blog-meta {
+        display: grid;
+        grid-template-columns: 8rem 1fr;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
     & h1, h2, h3 {
         font-family: var(--fonts-serif);
         line-height: 2rem;
@@ -128,10 +135,6 @@ main {
         margin-bottom: 0.25rem;
     }
 
-    & .blog-meta {
-        margin-right: 1.5rem;
-    }
-
     & #map-toggle {
         color: var(--accent);
     }
@@ -140,6 +143,7 @@ main {
         border-radius: 0.25rem;
         display: none;
         height: 24rem;
+        margin-bottom: 2rem;
     }
 
     & img {
