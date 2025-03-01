@@ -9,23 +9,26 @@
 {% endblock head %}
 
 {% block content %}
-<p>
-    <span class="blog-meta">{{ page.date }}</span>
+<div id="blog-meta">
+    <span class="blog-date">{{ page.date }}</span>
 
     {% if page.extra.location is defined %}
     <a id="map-toggle" href="javascript:void(0)">Toggle map</a>
-    <div id="map"></div>
+</div>
 
-    <script type="module">
-        import { initMap } from "{{ get_url(path='map.js') }}";
-        initMap(
-            {{ page.extra.location }},
-            "{{ config.extra.map_tile_url | safe }}",
-            '{{ config.extra.map_tile_attribution | safe }}'
-        );
-    </script>
-    {% endif %}
-</p>
+<div id="map"></div>
+
+<script type="module">
+    import { initMap } from "{{ get_url(path='map.js') }}";
+    initMap(
+        {{ page.extra.location }},
+        "{{ config.extra.map_tile_url | safe }}",
+        '{{ config.extra.map_tile_attribution | safe }}'
+    );
+</script>
+{% else %}
+</div>
+{% endif %}
 
 <h1>{{ page.title }}</h1>
 {{ page.content | safe }}
