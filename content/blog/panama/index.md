@@ -7,10 +7,10 @@ authors = ["Julian"]
 location = [8.952475792982094, -79.53698480531196]
 +++
 
+![Traffic](traffic.jpg)
+
 ![Ships](ships.jpg)
 ![Taboga](taboga.jpg)
-
-![Traffic](traffic.jpg)
 
 ![Port](port.jpg)
 ![Highrise](highrise.jpg)
