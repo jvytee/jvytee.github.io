@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>{{ page.title }} | Cloudsalat</title>
+{% endblock head %}
+
+{% block content %}
+{% set section = get_section(path="blog/_index.md") %}
+<h1>{{ section.title }}
+
+<div id="overviewMap"></div>
+
+<script type="module">
+    import { initOverviewMap } from "{{ get_url(path='map.js') }}";
+    const locations = [
+        {% for page in section.pages %}
+        {% if page.extra.location is defined %}
+        {{ page.extra.location }}
+        {% endif %}
+        {% endfor %}
+    ];
+
+    initOverviewMap(
+        {{ locations }},
+        "{{ config.extra.map_tile_url | safe }}",
+        '{{ config.extra.map_tile_attribution | safe }}'
+    );
+</script>
+{% endblock content %}
