@@ -1,5 +1,5 @@
 +++
-title = "Rainy Weather in the Cloud Forest"
+title = "Rainy Cloud Forests"
 date = 2025-03-20
 authors = ["Julian"]
 
