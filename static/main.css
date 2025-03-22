@@ -148,7 +148,7 @@ main {
 
     & #overviewMap {
         border-radius: 0.25rem;
-        height: 48rem;
+        height: 36rem;
     }
 
     & img {
