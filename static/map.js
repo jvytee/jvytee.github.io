@@ -28,10 +28,9 @@ export const initMap = (location, tileUrl, tileAttribution) => {
 
 export const initOverviewMap = (locations, tileUrl, tileAttribution) => {
     const mapDiv = document.getElementById("overviewMap");
-    const center = locations
-        .reduce((acc, current) => [acc[0] + current[0], acc[1] + current[1]], [0.0, 0.0])
-        .map((val) => val / locations.length);
-    const mapObj = map(mapDiv).setView(center, 5);
+    const upper = locations.reduce((acc, current) => [Math.max(acc[0], current[0]), Math.max(acc[1], current[1])], locations[0])
+    const lower = locations.reduce((acc, current) => [Math.min(acc[0], current[0]), Math.min(acc[1], current[1])], locations[0])
+    const mapObj = map(mapDiv).fitBounds([lower, upper]);
 
     tileLayer(
         tileUrl,
