@@ -146,6 +146,11 @@ main {
         margin-bottom: 2rem;
     }
 
+    & #overviewMap {
+        border-radius: 0.25rem;
+        height: 48rem;
+    }
+
     & img {
         border-radius: 0.25rem;
         max-width: 100%;

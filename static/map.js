@@ -30,15 +30,18 @@ export const initOverviewMap = (locations, tileUrl, tileAttribution) => {
     const mapDiv = document.getElementById("overviewMap");
     const center = locations
         .reduce((acc, current) => [acc[0] + current[0], acc[1] + current[1]], [0.0, 0.0])
-        .map((val) => val / locations.length());
-    const mapObj = map(mapDiv).setView(center, 6);
+        .map((val) => val / locations.length);
+    let mapObj = null;
 
-    tileLayer(
-        tileUrl,
-        { maxZoom: 18, attribution: tileAttribution }
-    ).addTo(mapObj);
+    window.onload = () => {
+        mapObj = map(mapDiv).setView(center, 5);
+        tileLayer(
+            tileUrl,
+            { maxZoom: 18, attribution: tileAttribution }
+        ).addTo(mapObj);
 
-    locations.forEach((location) => {
-        marker(location).addTo(mapObj);
-    });
+        locations.forEach((location) => {
+            marker(location).addTo(mapObj);
+        });
+    };
 };
