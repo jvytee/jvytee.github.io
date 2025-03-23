@@ -12,6 +12,8 @@
 
 <div id="overviewMap"></div>
 
+{{ page.content | safe }}
+
 <script type="module">
     import { initOverviewMap } from "{{ get_url(path='map.js') }}";
     const locations = [
