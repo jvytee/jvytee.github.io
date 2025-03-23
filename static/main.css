@@ -155,6 +155,10 @@ main {
         border-radius: 0.25rem;
         max-width: 100%;
     }
+
+    & .leaflet-popup-content {
+        font-family: var(--fonts-sans);
+    }
 }
 
 footer {
