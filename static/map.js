@@ -38,6 +38,6 @@ export const initOverviewMap = (locations, tileUrl, tileAttribution) => {
     ).addTo(mapObj);
 
     locations.forEach((location) => {
-        marker(location).addTo(mapObj);
+        marker(location).addTo(mapObj).bindPopup(`${location}`);
     });
 };
