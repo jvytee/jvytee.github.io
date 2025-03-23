@@ -156,7 +156,7 @@ main {
         max-width: 100%;
     }
 
-    & .leaflet-popup-content {
+    & .leaflet-container {
         font-family: var(--fonts-sans);
     }
 }
