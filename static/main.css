@@ -146,9 +146,18 @@ main {
         margin-bottom: 2rem;
     }
 
+    & #overviewMap {
+        border-radius: 0.25rem;
+        height: 36rem;
+    }
+
     & img {
         border-radius: 0.25rem;
         max-width: 100%;
+    }
+
+    & .leaflet-container {
+        font-family: var(--fonts-sans);
     }
 }
 
