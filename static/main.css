@@ -1,18 +1,8 @@
-@font-face {
-    font-family: "Playfair Display";
-    src: url("playfair-display.woff2");
-}
-
-@font-face {
-    font-family: "Inter";
-    src: url("inter.woff2");
-}
-
 :root {
     color-scheme: light dark;
 
-    --fonts-sans: "Inter", "Helvetica Neue", "Arial", sans-serif;
-    --fonts-serif: "Playfair Display", "Georgia", serif;
+    --fonts-sans: "Verdana", "Geneva", sans-serif;
+    --fonts-serif: "Georgia", "Times", "Times New Roman", serif;
     --fonts-mono: ui-monospace, "Courier New", "Courier", monospace;
 
     --black: #080808ff;
@@ -133,6 +123,10 @@ main {
 
     & li {
         margin-bottom: 0.25rem;
+    }
+
+    & .blog-date {
+        font-family: var(--fonts-mono);
     }
 
     & #map-toggle {
