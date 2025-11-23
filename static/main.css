@@ -53,7 +53,7 @@ header {
     font-family: var(--fonts-sans);
 
     border-radius: 0.25rem;
-    max-width: 640px;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
@@ -90,7 +90,7 @@ main {
     line-height: 1.5rem;
 
     border-radius: 0.25rem;
-    max-width: 640px;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
@@ -142,7 +142,7 @@ main {
     & #map {
         border-radius: 0.25rem;
         display: none;
-        height: 24rem;
+        height: 36rem;
         margin-bottom: 2rem;
     }
 
@@ -164,7 +164,7 @@ main {
 footer {
     font-family: var(--fonts-sans);
     border-radius: 0.25rem;
-    max-width: 640px;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
@@ -174,7 +174,7 @@ footer {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 720px) {
     body {
         padding: 0;
     }
