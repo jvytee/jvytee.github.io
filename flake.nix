@@ -7,11 +7,11 @@
 
   outputs = { self, nixpkgs }:
     let
+      eachSystem = nixpkgs.lib.genAttrs systems;
       systems = [
         "x86_64-linux"
         "aarch64-linux"
       ];
-      eachSystem = nixpkgs.lib.genAttrs systems;
     in {
       devShell = eachSystem (system:
         with import nixpkgs { inherit system; };
