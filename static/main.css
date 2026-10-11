@@ -169,14 +169,12 @@ main {
   }
 
   & #map {
-    border-radius: 0.25rem;
     display: none;
     height: 36rem;
     margin-bottom: 2rem;
   }
 
   & #overviewMap {
-    border-radius: 0.25rem;
     height: 36rem;
   }
 
